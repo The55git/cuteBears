@@ -276,6 +276,7 @@ function rainbowStop(){
   clearInterval(rainbowInterval); rainbowInterval=null;
 }
 function cycleHair(){
+  rainbowStop();
   selectHair((selectedHair+1)%HAIR_COLORS.length);
 }
 
